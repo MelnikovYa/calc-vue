@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Vue.js</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="grid">
+        <input type="text" @keyup.enter="calc()" v-model="result" placeholder="0" />
+        <button class="cell num" @click="input(num)" v-for="num in numbers">{{ num }}</button>
+        <button class="cell op" @click="input(op)" v-for="op in operations"  v-bind:disabled="isButtonDisabled">{{ op }}</button>
+        <button class="cell op" @click="reset()">R</button>
+        <button class="cell op" @click="calc()">=</button>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="test.js"></script>
+  </body>
+</html>
