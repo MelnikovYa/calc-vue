@@ -1,3 +1,14 @@
+button, 
+button:active {
+    outline: #fff;
+    background-color: #389e71;
+}
+input {
+    outline: #fff;
+}
+.num:active {
+    background-color: #283a4d;
+}
 button:disabled {
     background-color: #389e71;
 }
