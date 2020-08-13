@@ -1,0 +1,31 @@
+button:disabled {
+    background-color: #389e71;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: repeat(7, 50px);
+}
+input {
+    grid-column: 1 / 4;
+    text-align: right;
+    font-size: 20px;
+    border: none;
+}
+.op:last-child {
+    width: 300px;
+    grid-column: 1 / 4;
+    justify-self: center;
+}
+.op {
+    font-size: 18px;
+    color: white;
+    background-color: #3FB984;
+    border: 1px solid white;
+}
+.num {
+    font-size: 18px;
+    color: white;
+    background-color: #31475E;
+    border: 1px solid white;
+}
