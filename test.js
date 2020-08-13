@@ -7,18 +7,15 @@ const vue = new Vue({
     isButtonDisabled: false,
   },
   methods: {
-    input: function (char) {
+    input: function (char) {      
       this.isButtonDisabled = false;
       this.result = this.result.toString();
       this.result += char;
-      if (
-        this.result[this.result.length - 1] === "+" ||
-        this.result[this.result.length - 1] === "-" ||
-        this.result[this.result.length - 1] === "/" ||
-        this.result[this.result.length - 1] === "*"
-      ) {
-        this.isButtonDisabled = true;
-      }
+      vue.operations.forEach(function (item) {
+        if (vue.result[vue.result.length - 1] === item) {
+          vue.isButtonDisabled = true;
+        }
+      })
     },
     reset: function () {
       this.result = "";
