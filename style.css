@@ -5,6 +5,8 @@ button:active {
 }
 input {
     outline: #fff;
+    font-family: 'Denk One', sans-serif;
+    letter-spacing: 1px;
 }
 .num:active {
     background-color: #283a4d;
@@ -30,13 +32,13 @@ input {
 }
 .op {
     font-size: 18px;
-    color: white;
+    color: #fff;
     background-color: #3FB984;
-    border: 1px solid white;
+    border: 1px solid #fff;
 }
 .num {
     font-size: 18px;
-    color: white;
+    color: #fff;
     background-color: #31475E;
-    border: 1px solid white;
+    border: 1px solid #fff;
 }
